@@ -1,9 +1,9 @@
-// FCI – Programming 1 – 2018 - Assignment 2
+// FCI â€“ Programming 1 â€“ 2018 - Assignment 2
 // Program Name:ceaser cipher.cpp
 // Last Modification Date: 03/03/2017
-// Author1 and ID and Group: 2017 0351
-// Author2 and ID and Group: 2017 0352
-// Author3 and ID and Group: 2017 0353
+// Author1 and ID and Group:farah mohamed osama 2017 0351
+// Author2 and ID and Group:hussein hossam hussein 2017 0352
+// Author3 and ID and Group: omar reda 2017 0353
 // Teaching Assistant: xxxxx xxxxx
 // Purpose:each letter in the plaintext is replaced by a letter at some fixed number of positions down the alphabet.
 #include <iostream>
@@ -24,7 +24,6 @@ int main()
             cout<<"please enter the number of shifts"<<endl;
             int nshifts,num;
             cin>>nshifts;
-
             for (int i=0;i<plainWord.size();i++){
                 bool flag2=true;
                 if (plainWord[i]>='A'&& plainWord[i]<='Z'){
@@ -48,7 +47,6 @@ int main()
                 else
                     cout<<char(toupper(plainWord[i]));
             }
-
         }
       else if(choice=='2'){
             cout<<"please enter the message you want to decipher"<<endl;
@@ -68,10 +66,8 @@ int main()
                     num='a' - (cipheredMsg[i]-nshifts);
                     cipheredMsg[i]=char('z'- (num%26)+1);
                 }
-
                     cout<<cipheredMsg[i];
             }
-
         }
         else if (choice =='3'){
             flag1=false;
@@ -80,7 +76,5 @@ int main()
             cout<<"please choose either 1 or 2 or 3"<<endl;
         }
     }
-
-
-    return 0;
+  return 0;
 }
